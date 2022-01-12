@@ -1,0 +1,80 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 62.5%;
+    font-family: monospace;
+}
+.header-container{
+    width: 100%;
+    height: 15vh;
+    display: grid;
+}
+.header--icons{
+    height: 100%;
+    display: grid;
+    background-color: #47cfac;
+    grid-auto-flow: column;
+    justify-content: end;
+    place-items: center;
+    padding: 5px 0;
+    padding-right: 30px;
+}
+.header--icons a{
+    margin: 0 5px;
+}
+.header--icons a span{
+    color: white;
+}
+.header--aboutme{
+    display: grid;
+    grid-template-columns: repeat(2,auto);
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+    background-attachment: white;
+}
+.header--aboutme__logo{
+    height: 100px
+}
+.header--aboutme__logo img{
+    height: 100%;
+    object-fit: cover;
+}
+.header--aboutme__profile{
+    font-size: 2.4rem;
+    font-weight: bold;
+    border-bottom: 1px solid black;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.main--container{
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+    place-content: flex-start;
+    align-items: center;
+    background-image: url(../assets/img/Cover.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.main--title{
+    font-size: 3.8rem;
+    color: white;
+    text-align: center;
+    padding: 150px 0 100px 0;   
+}
+.main--button{
+    font-size: 2.4rem;
+    font-weight: bold;
+    background-color: turquoise;
+    padding: 10px;
+}
+.main--button:hover{
+    cursor: pointer;
+}
